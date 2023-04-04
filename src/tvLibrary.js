@@ -18,3 +18,5 @@ export async function getAllTv(req,res) {
          tvShow => ( {...tvShow.data(), id: tvShow.id})
     )
 }
+
+res.send.status(201).send(tvShowList)
